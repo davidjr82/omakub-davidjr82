@@ -6,7 +6,7 @@ sudo apt update -y
 sudo apt install -y curl git unzip
 
 echo "Cloning omakub-davidjr82..."
-git clone -b main https://github.com/davidjr82/omakub-davidjr82.git ~/.local/share/omakub-davidjr82 > /dev/null
+git clone -b develop https://github.com/davidjr82/omakub-davidjr82.git ~/.local/share/omakub-davidjr82 > /dev/null
 
 # Ensure computer doesn't go to sleep or lock while installing
 gsettings set org.gnome.desktop.screensaver lock-enabled false
