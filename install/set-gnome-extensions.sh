@@ -1,5 +1,5 @@
 sudo apt install -y gnome-shell-extension-manager pipx
-pipx install gnome-extensions-cli --system-site-packages
+pipx --force install gnome-extensions-cli --system-site-packages
 
 # Turn off default Ubuntu extensions
 # gnome-extensions disable tiling-assistant@ubuntu.com
