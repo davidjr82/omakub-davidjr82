@@ -1,4 +1,9 @@
 echo ""
+echo "GIT recommendation:"
+echo "git config --global user.name \"David Jiménez\""
+echo "git config --global user.email \"djimenez@edatta.com\""
+
+echo ""
 echo "MySQL recommendation:"
 echo "sudo mysql"
 echo "mysql_secure_installation"
