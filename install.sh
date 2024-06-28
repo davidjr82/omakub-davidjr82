@@ -16,6 +16,8 @@ gsettings set org.gnome.desktop.screensaver lock-enabled false
 gsettings set org.gnome.desktop.session idle-delay 0
 
 # Install fonts
+mkdir -p ~/.local/share/fonts
+
 set_font() {
   local font_name=$1
   local url=$2
@@ -35,6 +37,7 @@ set_font() {
   gsettings set org.gnome.desktop.interface monospace-font-name "$font_name 10"
   sed -i "s/\"editor.fontFamily\": \".*\"/\"editor.fontFamily\": \"$font_name\"/g" ~/.config/Code/User/settings.json
 }
+
 for script in ~/.local/share/omakub-davidjr82/fonts/*.sh; do source $script; done
 
 # Run installers
