@@ -23,7 +23,7 @@ gsettings set org.gnome.desktop.screensaver lock-enabled true
 gsettings set org.gnome.desktop.session idle-delay 300
 
 # Recommendations
-source ~/.local/share/omakub-davidjr82/install/post-install-recommendations.sh
+source ~/.local/share/omakub-davidjr82/post-install-recommendations.sh
 
 # Logout to pickup changes
 gum confirm "Ready to logout for all settings to take effect?" && gnome-session-quit --logout --no-prompt
