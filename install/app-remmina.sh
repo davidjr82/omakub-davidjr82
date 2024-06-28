@@ -1,1 +1,1 @@
-sudo apt install remmina
+sudo apt install remmina emmina-plugin-rdp
