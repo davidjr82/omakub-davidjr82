@@ -7,6 +7,9 @@ gnome-extensions disable ubuntu-appindicators@ubuntu.com
 gnome-extensions disable ubuntu-dock@ubuntu.com
 gnome-extensions disable ding@rastersoft.com
 
+# Pause to assure user is ready to accept confirmations
+gum confirm "To install Gnome extensions, you need to accept confirmations. Are you ready?"
+
 # Install new extensions
 gext install just-perfection-desktop@just-perfection
 gext install blur-my-shell@aunetx
