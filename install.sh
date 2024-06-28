@@ -34,7 +34,6 @@ set_font() {
     cd -
   fi
 
-  gsettings set org.gnome.desktop.interface monospace-font-name "$font_name 10"
   sed -i "s/\"editor.fontFamily\": \".*\"/\"editor.fontFamily\": \"$font_name\"/g" ~/.config/Code/User/settings.json
 }
 
