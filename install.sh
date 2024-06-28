@@ -3,7 +3,7 @@ set -e
 
 # Needed for all installers
 sudo apt update -y
-sudo apt install -y curl git unzip
+sudo apt install -y curl git unzip gdebi
 
 echo "Cloning omakub-davidjr82..."
 git clone -b develop https://github.com/davidjr82/omakub-davidjr82.git ~/.local/share/omakub-davidjr82 > /dev/null
