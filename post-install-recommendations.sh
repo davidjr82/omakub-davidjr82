@@ -16,3 +16,7 @@ echo "Backup and sync settings with github account"
 echo ""
 echo "VPN pre-connection:"
 echo "sudo ip route add 192.168.1.0/24 dev ppp0"
+
+echo ""
+echo "Virtualbox Win11:"
+echo "Attach installation USB before launching the container"
