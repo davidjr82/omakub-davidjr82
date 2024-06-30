@@ -1,7 +1,7 @@
 echo ""
 echo "GIT recommendation:"
-echo "git config --global user.name \"David Jiménez\""
-echo "git config --global user.email \"djimenez@edatta.com\""
+echo "git config --global user.name \"Your name\""
+echo "git config --global user.email \"your@email.com\""
 
 echo ""
 echo "MySQL recommendation:"
