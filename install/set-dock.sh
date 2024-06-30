@@ -2,10 +2,11 @@
 apps=(
 	"google-chrome.desktop"
 	"firefox_firefox.desktop"
+	"microsoft-edge.desktop"
 	"code.desktop"
     "MS-Teams.desktop"
 	"WhatsApp.desktop"
-    "org.telegram.desktop"
+    "org.telegram.desktop.desktop"
 	"spotify.desktop"
 	"org.gnome.Settings.desktop"
 	"org.gnome.Nautilus.desktop"
