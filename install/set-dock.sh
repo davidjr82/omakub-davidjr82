@@ -1,11 +1,11 @@
 # Favorite apps for dock
 apps=(
 	"google-chrome.desktop"
-	"firefox_firefox.desktop"
+	"firefox.desktop"
 	"code.desktop"
     "MS-Teams.desktop"
 	"WhatsApp.desktop"
-    "org.telegram.desktop.desktop"
+    "org.telegram.desktop"
 	"spotify.desktop"
 	"org.gnome.Settings.desktop"
 	"org.gnome.Nautilus.desktop"
