@@ -7,7 +7,7 @@ Exec=google-chrome --app="https://web.whatsapp.com" --name=WhatsApp
 Terminal=false
 Type=Application
 Icon=/home/$USER/.local/share/omakub-davidjr82/applications/icons/WhatsApp.png
-Categories=Network;Application;
+Categories=Network;
 Keywords=WhatsApp;webapp;
 MimeType=text/html;text/xml;application/xhtml_xml;
 StartupNotify=true
