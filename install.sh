@@ -4,6 +4,7 @@ set -e
 # Needed for all installers
 sudo apt update -y
 sudo apt install -y curl git unzip
+mkdir -p /tmp/omakub-davidjr82-debs
 
 # other utils
 sudo apt install -y net-tools
