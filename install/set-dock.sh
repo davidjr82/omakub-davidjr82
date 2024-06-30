@@ -1,7 +1,7 @@
 # Favorite apps for dock
 apps=(
 	"google-chrome.desktop"
-	"firefox.desktop"
+	"firefox_firefox.desktop"
 	"code.desktop"
     "MS-Teams.desktop"
 	"WhatsApp.desktop"
@@ -37,3 +37,7 @@ favorites_list="[${favorites_list%,}]"
 
 # Set the favorite apps
 gsettings set org.gnome.shell favorite-apps "$favorites_list"
+# gsettings get org.gnome.shell favorite-apps
+
+# Do a check
+# desktop-file-validate ${HOME}/.local/share/applications/*.desktop
