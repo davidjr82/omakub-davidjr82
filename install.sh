@@ -4,6 +4,11 @@ set -e
 # Needed for all installers
 sudo apt update -y
 sudo apt install -y curl git unzip
+
+sudo apt install -y flatpak
+sudo apt install -y gnome-software-plugin-flatpak
+sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
 mkdir -p /tmp/omakub-davidjr82-debs
 
 # other utils

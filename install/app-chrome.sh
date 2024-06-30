@@ -5,4 +5,6 @@ if [ ! -f /tmp/omakub-davidjr82-debs/google-chrome-stable_current_amd64.deb ]; t
     # rm google-chrome-stable_current_amd64.deb
     xdg-settings set default-web-browser google-chrome.desktop
     cd -
+else
+    echo "Google Chrome is already installed"
 fi
