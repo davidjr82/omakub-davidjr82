@@ -6,7 +6,7 @@ Original idea: https://omakub.org/
 
 ## Develop
 ```bash
- rm -rf ~/.local/share/omakub-davidjr82 && wget -qO- https://raw.githubusercontent.com/davidjr82/omakub-davidjr82/develop/install.sh | bash
+rm -rf ~/.local/share/omakub-davidjr82 && wget -qO- https://raw.githubusercontent.com/davidjr82/omakub-davidjr82/develop/install.sh | bash
 ```
 
 ## Main / Stable
@@ -16,5 +16,5 @@ rm -rf ~/.local/share/omakub-davidjr82 && wget -qO- https://raw.githubuserconten
 
 ## Delete temporary deb files
 ```bash
- rm -rf ~/.local/share/omakub-davidjr82 && wget -qO- https://raw.githubusercontent.com/davidjr82/omakub-davidjr82/develop/install.sh | bash
+rm -rf /tmp/omakub-davidjr82-debs
 ```
