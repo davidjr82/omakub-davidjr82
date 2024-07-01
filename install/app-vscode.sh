@@ -1,4 +1,4 @@
-if ! command -v code &> /dev/null
+if ! [ -x "$(command -v code)" ]; then
     cd /tmp/omakub-davidjr82-debs
     wget -O vscode.deb 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64'
     sudo apt install -y ./vscode.deb
