@@ -1,5 +1,5 @@
-LOCALSEND_VERSION=$(curl -s "https://api.github.com/repos/localsend/localsend/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
-if [ ! -f /tmp/omakub-davidjr82-debs/LocalSend-${LOCALSEND_VERSION}-linux-x86-64.deb ]; then
+if ! command -v localsend_app &> /dev/null
+    LOCALSEND_VERSION=$(curl -s "https://api.github.com/repos/localsend/localsend/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
     cd /tmp/omakub-davidjr82-debs
     wget "https://github.com/localsend/localsend/releases/latest/download/LocalSend-${LOCALSEND_VERSION}-linux-x86-64.deb"
     sudo apt install -y ./LocalSend-${LOCALSEND_VERSION}-linux-x86-64.deb
