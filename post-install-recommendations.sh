@@ -39,4 +39,8 @@ echo "Wine tools:"
 echo "HeidiSQL, scanner"
 
 echo ""
+echo "Add PWAs from Chrome:"
+echo "MS-Teams, WhatsApp"
+
+echo ""
 echo "Other recommendations: check private gist"

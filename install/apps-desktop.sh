@@ -1,1 +1,0 @@
-for script in ~/.local/share/omakub-davidjr82/applications/*.sh; do source $script; done
