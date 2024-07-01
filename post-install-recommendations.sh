@@ -37,3 +37,6 @@ echo "Attach installation USB before launching the container"
 echo ""
 echo "Wine tools:"
 echo "HeidiSQL, scanner"
+
+echo ""
+echo "Other recommendations: check private gist"
