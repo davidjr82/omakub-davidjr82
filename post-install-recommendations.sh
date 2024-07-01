@@ -13,9 +13,10 @@ echo "git config --global user.email \"your@email.com\""
 
 echo ""
 echo "MySQL recommendation:"
-echo "sudo mysql"
-echo "mysql_secure_installation"
-echo "mysql -u root -p"
+echo "sudo mysql_secure_installation"
+echo "To access as root: sudo mysql"
+echo "To create a power user: CREATE USER 'new_user'@'localhost' IDENTIFIED BY 'password';"
+echo "To access as power user: mysql -u new_user -p"
 
 echo ""
 echo "VS Code recommendation:"
