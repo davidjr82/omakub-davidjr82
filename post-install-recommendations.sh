@@ -1,4 +1,8 @@
 echo ""
+echo "Configure monitors as desired and run in the terminal:"
+echo "sudo cp ~/.config/monitors.xml ~gdm/.config/monitors.xml && sudo chown gdm:gdm ~gdm/.config/monitors.xml"
+
+echo ""
 echo "Manual installation to accept EULA terms:"
 echo "virtualbox, microsoft fonts"
 
