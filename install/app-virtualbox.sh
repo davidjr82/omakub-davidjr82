@@ -2,6 +2,6 @@
 # for a guide on how to run Ubuntu inside it.
 sudo apt install -y linux-headers-$(uname -r) dkms
 
-# TODO: Accept user terms breaks the scritp
+# TODO: Accept user terms breaks the script
 # sudo apt install -y virtualbox virtualbox-ext-pack
 # sudo usermod -aG vboxusers ${USER}
