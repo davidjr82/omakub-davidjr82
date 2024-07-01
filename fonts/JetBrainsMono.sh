@@ -3,6 +3,3 @@ FONT_URL="https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBr
 FONT_FILE_TYPE="ttf"
 
 source ~/.local/share/omakub-davidjr82/fonts/_install-font.sh
-
-# set JetBrainsMono as default font in vs code
-sed -i "s/\"editor.fontFamily\": \".*\"/\"editor.fontFamily\": \"$FONT_NAME\"/g" ~/.config/Code/User/settings.json
