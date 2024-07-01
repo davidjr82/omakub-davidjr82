@@ -16,6 +16,7 @@ echo "mysql -u root -p"
 echo ""
 echo "VS Code recommendation:"
 echo "Backup and sync settings with github account"
+echo "Check JetBrainsMono as font family in settings"
 
 echo ""
 echo "VPN pre-connection:"
