@@ -50,6 +50,7 @@ for script in ~/.local/share/omakub-davidjr82/install/*.sh; do source $script; d
 
 # Upgrade everything that might ask for a reboot last
 sudo apt upgrade -y
+sudo apt-get autoremove -y
 
 # Revert to normal idle and lock settings
 gsettings set org.gnome.desktop.screensaver lock-enabled true
@@ -60,5 +61,8 @@ source ~/.local/share/omakub-davidjr82/post-install-recommendations.sh
 
 # Logout to pickup changes
 echo ""
-echo "Logout for all settings to take effect"
+echo "Logout for all settings to take effect (paste this command in the terminal):"
+echo "gnome-session-quit --logout --no-prompt"
+echo ""
+echo ""
 # gum confirm "Ready to logout for all settings to take effect?" && gnome-session-quit --logout --no-prompt
