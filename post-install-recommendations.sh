@@ -1,4 +1,8 @@
 echo ""
+echo "Manual installation to accept EULA terms:"
+echo "virtualbox, microsoft fonts"
+
+echo ""
 echo "GIT recommendation:"
 echo "git config --global user.name \"Your name\""
 echo "git config --global user.email \"your@email.com\""
