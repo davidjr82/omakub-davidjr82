@@ -1,4 +1,5 @@
 # repository fonts
+# TODO: Accept user terms breaks the script
 sudo apt-get install -y ttf-mscorefonts-installer
 
 # downloaded fonts
