@@ -1,6 +1,9 @@
 # For keyboards that only have a start/stop button for music, like Logitech MX Keys Mini
 gsettings set org.gnome.settings-daemon.plugins.media-keys next "['<Shift>AudioPlay']"
 
+# Make it easy to maximize like you can fill left/right
+gsettings set org.gnome.desktop.wm.keybindings maximize "['<Super>Up']"
+
 # Use 6 fixed workspaces instead of dynamic mode
 gsettings set org.gnome.mutter dynamic-workspaces false
 gsettings set org.gnome.desktop.wm.preferences num-workspaces 6
