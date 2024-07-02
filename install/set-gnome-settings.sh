@@ -1,8 +1,17 @@
-# For keyboards that only have a start/stop button for music, like Logitech MX Keys Mini
-gsettings set org.gnome.settings-daemon.plugins.media-keys next "['<Shift>AudioPlay']"
+# Alt+F4 is very cumbersome
+gsettings set org.gnome.desktop.wm.keybindings close "['<Super>w']"
 
 # Make it easy to maximize like you can fill left/right
 gsettings set org.gnome.desktop.wm.keybindings maximize "['<Super>Up']"
+
+# Make it easy to resize undecorated windows
+gsettings set org.gnome.desktop.wm.keybindings begin-resize "['<Super>BackSpace']"
+
+# For keyboards that only have a start/stop button for music, like Logitech MX Keys Mini
+gsettings set org.gnome.settings-daemon.plugins.media-keys next "['<Shift>AudioPlay']"
+
+# Full-screen with title/navigation bar
+gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['<Shift>F11']"
 
 # Use 6 fixed workspaces instead of dynamic mode
 gsettings set org.gnome.mutter dynamic-workspaces false
