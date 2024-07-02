@@ -21,3 +21,32 @@ webm2mp4() {
   output_file="${input_file%.webm}.mp4"
   ffmpeg -i "$input_file" -c:v libx264 -preset slow -crf 22 -c:a aac -b:a 192k "$output_file"
 }
+
+# laravel
+alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'
+alias art='php artisan'
+alias laravel-installer='composer create-project --prefer-dist laravel/laravel'
+alias serve='php artisan serve'
+alias viewlog='tail -f -n 450 storage/logs/laravel*.log \
+                | grep -i -E \
+                    "^\[\d{4}\-\d{2}\-\d{2} \d{2}:\d{2}:\d{2}\]|Next [\w\W]+?\:" \
+                    --color'
+alias rmlogs='rm storage/logs/laravel-*.log'
+
+# git
+alias g='git'
+alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias gs='git status'
+alias nah='git reset --hard && git clean -df'
+alias wip="git add . && git commit -m 'wip'"
+alias lzg='lazygit'
+
+# docker
+alias lzd='lazydocker'
+alias d='docker'
+
+# other tools
+alias df="df -h"
+alias fu="du -ch"
+alias localip="ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'"
+alias ip="curl icanhazip.com"
