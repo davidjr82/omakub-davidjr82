@@ -37,6 +37,8 @@ alias rmlogs='rm storage/logs/laravel-*.log'
 alias g='git'
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gs='git status'
+alias gc='git commit -a -m'
+alias gca='git commit -a --amend'
 alias nah='git reset --hard && git clean -df'
 alias wip="git add . && git commit -m 'wip'"
 alias lzg='lazygit'
