@@ -5,10 +5,11 @@ if ! [ -x "$(command -v zellij)" ]; then
     sudo install zellij /usr/local/bin
     rm zellij.tar.gz zellij
     cd -
-
-    mkdir -p ~/.config/zellij/
-    [ ! -f "$HOME/.config/zellij/config.kdl" ] && cp ~/.local/share/omakub-davidjr82/configs/zellij.kdl ~/.config/zellij/config.kdl
-    [ ! -L "$HOME/.config/zellij/themes" ] && ln -s ~/.local/share/omakub-davidjr82/themes/zellij ~/.config/zellij/themes
 else
     echo "Zellij is already installed"
 fi
+
+# reset zellij configuration
+rm -rf ~/.config/zellij/
+mkdir -p ~/.config/zellij/
+cp -r ~/.local/share/omakub-davidjr82/configs/zellij/. ~/.config/zellij/
