@@ -1,6 +1,6 @@
 # php
 sudo add-apt-repository ppa:ondrej/php -y
-sudo apt install -y openssl php php-bcmath php-curl php-gd php-json php-mbstring php-mysql php-sqlite3 php-tokenizer php-xml php-zip
+sudo apt install -y openssl php php-bcmath php-curl php-gd php-json php-mbstring php-memcached php-mysql php-sqlite3 php-tokenizer php-xml php-zip
 
 # composer
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
