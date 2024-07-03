@@ -46,6 +46,7 @@ alias lzg='lazygit'
 # docker
 alias lzd='lazydocker'
 alias d='docker'
+alias franken='docker run -v $PWD:/app/public  -p 80:80 -p 443:443 -p 443:443/udp  dunglas/frankenphp'
 
 # other tools
 alias df="df -h"
