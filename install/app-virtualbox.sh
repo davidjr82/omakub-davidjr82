@@ -3,5 +3,5 @@
 sudo apt install -y linux-headers-$(uname -r) dkms
 
 # TODO: Accept user terms breaks the script
-# sudo apt install -y virtualbox virtualbox-ext-pack virtualbox-guest-additions-iso virtualbox-guest-utils
+# sudo apt install -y virtualbox virtualbox-ext-pack virtualbox-guest-additions-iso virtualbox-guest-utils virtualbox-guest-x11
 # sudo usermod -aG vboxusers ${USER}
