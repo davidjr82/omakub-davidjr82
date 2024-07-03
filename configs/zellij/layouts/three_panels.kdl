@@ -1,5 +1,9 @@
 layout {
-    pane
-    pane
-    pane
+    pane split_direction="vertical" {
+        pane size="60%"
+        pane size="40%" {
+            pane
+            pane
+        }
+    }
 }
