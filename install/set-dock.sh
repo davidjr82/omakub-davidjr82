@@ -1,12 +1,15 @@
 # Favorite apps for dock
 apps=(
-	"code.desktop"
-	"microsoft-edge.desktop"
-	"google-chrome.desktop"
-    "org.telegram.desktop.desktop"
-	"spotify.desktop"
-	"org.gnome.Settings.desktop"
-	"org.gnome.Nautilus.desktop"
+	'code.desktop'
+	'microsoft-edge.desktop'
+	# teams pwa
+	'google-chrome.desktop', 
+	# whatsapp pwa
+	# telegram pwa
+	'spotify.desktop'
+	'virtualbox.desktop'
+	'org.gnome.Settings.desktop'
+	'org.gnome.Nautilus.desktop'
 )
 
 # Array to hold installed favorite apps
