@@ -1,4 +1,4 @@
-if ! [ -x "$(command -v termius)" ]; then
+if ! [ -x "$(command -v termius-app)" ]; then
     cd /tmp/omakub-davidjr82-debs
     wget 'https://www.termius.com/download/linux/Termius.deb'
     sudo apt install -y ./Termius.deb
