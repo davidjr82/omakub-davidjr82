@@ -44,15 +44,15 @@ gsettings set org.gnome.shell.extensions.tactile col-3 0
 gsettings set org.gnome.shell.extensions.tactile row-0 1
 gsettings set org.gnome.shell.extensions.tactile row-1 1
 
-gsettings set org.gnome.shell.extensions.tactile layout-2-col-0 2
-gsettings set org.gnome.shell.extensions.tactile layout-2-col-1 0
+gsettings set org.gnome.shell.extensions.tactile layout-2-col-0 1
+gsettings set org.gnome.shell.extensions.tactile layout-2-col-1 6
 gsettings set org.gnome.shell.extensions.tactile layout-2-col-2 1
 gsettings set org.gnome.shell.extensions.tactile layout-2-col-3 0
 gsettings set org.gnome.shell.extensions.tactile layout-2-row-0 1
 gsettings set org.gnome.shell.extensions.tactile layout-2-row-1 1
 
-gsettings set org.gnome.shell.extensions.tactile layout-3-col-0 1
-gsettings set org.gnome.shell.extensions.tactile layout-3-col-1 6
+gsettings set org.gnome.shell.extensions.tactile layout-3-col-0 2
+gsettings set org.gnome.shell.extensions.tactile layout-3-col-1 0
 gsettings set org.gnome.shell.extensions.tactile layout-3-col-2 1
 gsettings set org.gnome.shell.extensions.tactile layout-3-col-3 0
 gsettings set org.gnome.shell.extensions.tactile layout-3-row-0 1
