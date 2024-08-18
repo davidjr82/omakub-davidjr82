@@ -55,3 +55,4 @@ alias localip="ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo
 alias ip="curl icanhazip.com"
 
 alias phpalt="sudo update-alternatives --config php"
+alias z="/usr/local/bin/zellij --layout /home/djimenez/.config/zellij/layouts/three_panels.kdl"
