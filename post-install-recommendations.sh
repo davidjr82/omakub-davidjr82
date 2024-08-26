@@ -42,11 +42,6 @@ echo ""
 echo "Add PWAs from Chrome:"
 echo "MS-Teams, WhatsApp"
 
-echo ""
-echo "To install certificates for electronic dni in browsers, execute this and follow the indicated steps:"
-echo "open  /usr/share/libpkcs11-fnmtdnie/launch.html"
-
-
 
 echo ""
 echo "Other recommendations: check private gist"
