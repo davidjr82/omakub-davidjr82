@@ -15,7 +15,7 @@ if ! [ -x "$(command -v autofirma)" ]; then
     curl https://www.sede.fnmt.gob.es/documents/10445900/11635686/libpkcs11-fnmtdnie_1.6.9_amd64.deb/ --output libpkcs11-fnmtdnie_1.6.9_amd64.deb
     sudo apt install -y ./libpkcs11-fnmtdnie_1.6.9_amd64.deb
     rm libpkcs11-fnmtdnie_1.6.9_amd64.deb
-    open  /usr/share/libpkcs11-fnmtdnie/launch.html
+    # open  /usr/share/libpkcs11-fnmtdnie/launch.html
     
     cd -
 else
