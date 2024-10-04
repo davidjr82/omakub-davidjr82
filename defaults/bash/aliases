@@ -56,3 +56,7 @@ alias ip="curl icanhazip.com"
 
 alias phpalt="sudo update-alternatives --config php"
 alias z="/usr/local/bin/zellij --layout /home/djimenez/.config/zellij/layouts/three_panels.kdl"
+
+alias kp='sudo fuser -n tcp -k' 
+alias kpd='sudo fuser -n tcp -k 8000 && sudo fuser -n tcp -k 5173' 
+
