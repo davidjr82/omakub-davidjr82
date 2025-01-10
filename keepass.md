@@ -59,32 +59,10 @@ mount_keepass.sh:
 #!/bin/bash
 
 mkdir -p /home/djimenez/.keepass/remote_keepass_djimenez
-/usr/bin/rclone mount keepass-djimenez:/keepass /home/djimenez/.keepass/remote_keepass_djimenez \
-    --config=/home/djimenez/.config/rclone/rclone.conf \
-    --allow-other \
-    --buffer-size=1G \
-    --dir-cache-time=72h \
-    --log-level=INFO \
-    --poll-interval=15s \
-    --timeout=1h \
-    --umask=002 \
-    --vfs-cache-mode=full \
-    --vfs-cache-max-age=5m \
-    --vfs-cache-poll-interval=5m
+/usr/bin/rclone mount keepass-djimenez:/keepass /home/djimenez/.keepass/remote_keepass_djimenez &
 
 mkdir -p /home/djimenez/.keepass/remote_keepass_edatta
-/usr/bin/rclone mount keepass-edatta:/keepass /home/djimenez/.keepass/remote_keepass_edatta \
-    --config=/home/djimenez/.config/rclone/rclone.conf \
-    --allow-other \
-    --buffer-size=1G \
-    --dir-cache-time=72h \
-    --log-level=INFO \
-    --poll-interval=15s \
-    --timeout=1h \
-    --umask=002 \
-    --vfs-cache-mode=full \
-    --vfs-cache-max-age=5m \
-    --vfs-cache-poll-interval=5m
+/usr/bin/rclone mount keepass-edatta:/keepass /home/djimenez/.keepass/remote_keepass_edatta &
 ```
 
 
