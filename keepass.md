@@ -1,8 +1,8 @@
 # Download keepassxc
-
+```
 mkdir keepass_tmp
 cd keepass_tmp
-
+```
 ```
 sudo apt install libfuse2t64
 
@@ -44,7 +44,7 @@ chmod 700 /home/djimenez/.keepass/remote_keepass_djimenez
 chmod 700 /home/djimenez/.keepass/remote_keepass_edatta
 ```
 # Test mounting remote folder
-
+```
 sudo apt install rclone
 rclone config
     new remote - keepass-djimenez - sftp - 143.42.56.88 - keepass-djimenez - 22 - y (password) - enter until end
@@ -52,12 +52,12 @@ rclone config
 
 rclone mount keepass-djimenez:/keepass  ~/.keepass/remote_keepass_djimenez --daemon
 rclone mount keepass-edatta:/keepass  ~/.keepass/remote_keepass_edatta --daemon
-        
+``` 
 # Unmount folder
-
+```
 fusermount -u /home/djimenez/.keepass/remote_keepass_djimenez
 fusermount -u /home/djimenez/.keepass/remote_keepass_edatta
-
+```
 # keep on restart
 
 sudo nano /etc/systemd/system/rclone_remote_keepass.service
@@ -79,9 +79,10 @@ Restart=on-failure
 [Install]
 WantedBy=multi-user.target
 ```
-
+```
 sudo systemctl daemon-reload
 sudo systemctl enable rclone_remote_keepass.service
 sudo systemctl start rclone_remote_keepass.service
 sudo systemctl status rclone_remote_keepass.service
 sudo reboot
+```
