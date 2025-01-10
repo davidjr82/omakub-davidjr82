@@ -52,7 +52,42 @@ rclone config
 
 rclone mount keepass-djimenez:/keepass  ~/.keepass/remote_keepass_djimenez --daemon
 rclone mount keepass-edatta:/keepass  ~/.keepass/remote_keepass_edatta --daemon
-``` 
+```
+
+mount_keepass.sh:
+```
+#!/bin/bash
+
+mkdir -p /home/djimenez/.keepass/remote_keepass_djimenez
+/usr/bin/rclone mount keepass-djimenez:/keepass /home/djimenez/.keepass/remote_keepass_djimenez \
+    --config=/home/djimenez/.config/rclone/rclone.conf \
+    --allow-other \
+    --buffer-size=1G \
+    --dir-cache-time=72h \
+    --log-level=INFO \
+    --poll-interval=15s \
+    --timeout=1h \
+    --umask=002 \
+    --vfs-cache-mode=full \
+    --vfs-cache-max-age=5m \
+    --vfs-cache-poll-interval=5m
+
+mkdir -p /home/djimenez/.keepass/remote_keepass_edatta
+/usr/bin/rclone mount keepass-edatta:/keepass /home/djimenez/.keepass/remote_keepass_edatta \
+    --config=/home/djimenez/.config/rclone/rclone.conf \
+    --allow-other \
+    --buffer-size=1G \
+    --dir-cache-time=72h \
+    --log-level=INFO \
+    --poll-interval=15s \
+    --timeout=1h \
+    --umask=002 \
+    --vfs-cache-mode=full \
+    --vfs-cache-max-age=5m \
+    --vfs-cache-poll-interval=5m
+```
+
+
 # Unmount folder
 ```
 fusermount -u /home/djimenez/.keepass/remote_keepass_djimenez
@@ -72,8 +107,7 @@ Wants=network-online.target
 Type=simple
 User=djimenez
 ExecStart=/home/djimenez/.keepass/mount_remotes.sh
-ExecStop=/usr/bin/fusermount -u /home/djimenez/.keepass/remote_keepass_djimenez
-ExecStop=/usr/bin/fusermount -u /home/djimenez/.keepass/remote_keepass_edatta
+ExecStop=/home/djimenez/.keepass/unmount_remotes.sh
 Restart=on-failure
 
 [Install]
