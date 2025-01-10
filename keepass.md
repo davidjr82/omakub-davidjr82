@@ -35,6 +35,9 @@ cd ..
 rm -rf keepass_tmp
 ```
 
+# edit desktop file
+sudo desktop-file-edit desktop-file-edit --set-key="Exec" --set-value="/opt/keepassxc/KeePassXC-2.7.9-x86_64.AppImage %F" keepassxc.desktop
+
 # Create mount point
 ```
 mkdir -p /home/djimenez/.keepass/remote_keepass_djimenez
