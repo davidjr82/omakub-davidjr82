@@ -3,6 +3,7 @@
 mkdir keepass_tmp
 cd keepass_tmp
 
+```
 sudo apt install libfuse2t64
 
 wget https://github.com/keepassxreboot/keepassxc/releases/download/2.7.9/KeePassXC-2.7.9-x86_64.AppImage
@@ -12,6 +13,8 @@ mkdir /opt/keepassxc/
 sudo mv squashfs-root /opt/keepassxc/
 
 nano keepassxc.desktop
+```
+
 ```
 [Desktop Entry]
 Name=KeepassXC
@@ -25,16 +28,21 @@ StartupNotify=true
 X-Desktop-File-Install-Version=0.27
 ```
 
+```
 sudo desktop-file-install keepassxc.desktop
 
 cd ..
 rm -rf keepass_tmp
+```
 
 # Create mount point
-
+```
 mkdir -p /home/djimenez/.keepass/remote_keepass_djimenez
 mkdir -p /home/djimenez/.keepass/remote_keepass_edatta
 
+chmod 700 /home/djimenez/.keepass/remote_keepass_djimenez
+chmod 700 /home/djimenez/.keepass/remote_keepass_edatta
+```
 # Test mounting remote folder
 
 sudo apt install rclone
@@ -47,8 +55,8 @@ rclone mount keepass-edatta:/keepass  ~/.keepass/remote_keepass_edatta --daemon
         
 # Unmount folder
 
-fusermount -u /home/djimenez/.keepass.keepass/remote_keepass_djimenez
-fusermount -u /home/djimenez/.keepass.keepass/remote_keepass_edatta
+fusermount -u /home/djimenez/.keepass/remote_keepass_djimenez
+fusermount -u /home/djimenez/.keepass/remote_keepass_edatta
 
 # keep on restart
 
@@ -64,8 +72,8 @@ Wants=network-online.target
 Type=simple
 User=djimenez
 ExecStart=/home/djimenez/.keepass/mount_remotes.sh
-ExecStop=/usr/bin/fusermount -u /home/djimenez/.keepass.keepass/remote_keepass_djimenez
-ExecStop=/usr/bin/fusermount -u /home/djimenez/.keepass.keepass/remote_keepass_edatta
+ExecStop=/usr/bin/fusermount -u /home/djimenez/.keepass/remote_keepass_djimenez
+ExecStop=/usr/bin/fusermount -u /home/djimenez/.keepass/remote_keepass_edatta
 Restart=on-failure
 
 [Install]
